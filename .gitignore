@@ -1,2 +1,9 @@
 dest/
 *.js
+!csp-evaluator.js
+!bundle-standalone.js
+!test-standalone.js
+!examples.js
+node_modules/
+dist/
+package-lock.json

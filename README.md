@@ -49,6 +49,28 @@ To run unit tests, run:
 npm install && npm test
 ```
 
+## Standalone Single-File Library
+
+For quick and easy use without npm or build tools, you can use the standalone single-file version:
+
+```javascript
+// Node.js
+const CSPEvaluator = require('./csp-evaluator.js');
+const result = CSPEvaluator.evaluateCSP("script-src 'unsafe-inline'");
+console.log(result.findings);
+```
+
+```html
+<!-- Browser -->
+<script src="csp-evaluator.js"></script>
+<script>
+  const result = CSPEvaluator.evaluateCSP("script-src 'self'");
+  console.log(result.summary);
+</script>
+```
+
+See [STANDALONE-README.md](STANDALONE-README.md) for complete documentation and [demo.html](demo.html) for an interactive browser demo.
+
 ## Example Usage
 
 ```javascript
