@@ -1,2 +1,6 @@
 dest/
 *.js
+!csp-evaluator.js
+node_modules/
+dist/
+package-lock.json
